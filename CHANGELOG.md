@@ -12,7 +12,7 @@
 - Border radius of terminal does not match editor, chat, etc. #61
 - Made the primary sidebar icons slightly larger (18px to 22px)
 - Window controls background color is incorrect #72
-- When opening VSCode with no open files, the default tab would be cut off. #30
+- When opening Antigravity with no open files, the default tab would be cut off. #30
 - When working with `ipynb` files the editor wouldnt follow correct rendering and code blocks did not stand out #45
 - Elements in the terminal when split screen would spill over
 - Editor tabs overlapping with floating header in Linux #26
