@@ -6,6 +6,7 @@
   "publisher": "MadhavKrishanGoswami",
   "license": "MIT",
   "engines": {
+    "vscode": "^1.60.0",
     "antigravity": "^1.60.0"
   },
   "categories": [
