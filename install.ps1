@@ -47,7 +47,7 @@ Write-Host ""
 Write-Host "Step 1: Installing Islands Dark theme extension..."
 
 # Install by copying to Antigravity extensions directory
-$extDir = "$env:USERPROFILE\.antigravity\extensions\bwya77.islands-dark-1.0.0"
+$extDir = "$env:USERPROFILE\.antigravity\extensions\MadhavKrishanGoswami.islands-dark-1.0.0"
 if (Test-Path $extDir) {
     Remove-Item -Recurse -Force $extDir
 }
@@ -72,20 +72,20 @@ try {
 
     # Remove any existing Islands Dark entry
     $extensions = @($extensions | Where-Object {
-        $_.identifier.id -ne 'bwya77.islands-dark' -and
+        $_.identifier.id -ne 'MadhavKrishanGoswami.islands-dark' -and
         $_.identifier.id -ne 'your-publisher-name.islands-dark'
     })
 
     # Add new entry
     $newEntry = [PSCustomObject]@{
-        identifier = [PSCustomObject]@{ id = 'bwya77.islands-dark' }
+        identifier = [PSCustomObject]@{ id = 'MadhavKrishanGoswami.islands-dark' }
         version = '1.0.0'
         location = [PSCustomObject]@{
             '$mid' = 1
-            path = "$env:USERPROFILE\.antigravity\extensions\bwya77.islands-dark-1.0.0"
+            path = "$env:USERPROFILE\.antigravity\extensions\MadhavKrishanGoswami.islands-dark-1.0.0"
             scheme = 'file'
         }
-        relativeLocation = 'bwya77.islands-dark-1.0.0'
+        relativeLocation = 'MadhavKrishanGoswami.islands-dark-1.0.0'
     }
     $extensions += $newEntry
 

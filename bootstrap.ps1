@@ -1,5 +1,5 @@
 # Islands Dark Theme Bootstrap Installer for Windows
-# One-liner: irm https://raw.githubusercontent.com/bwya77/antigravity-dark-islands/main/bootstrap.ps1 | iex
+# One-liner: irm https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/bootstrap.ps1 | iex
 
 param()
 
@@ -9,7 +9,7 @@ echo "🏝️  Islands Dark Theme Bootstrap Installer"
 echo "=========================================="
 echo ""
 
-$RepoUrl = "https://github.com/bwya77/antigravity-dark-islands.git"
+$RepoUrl = "https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git"
 $Branch = "main"
 $InstallDir = "$env:TEMP\islands-dark-temp"
 

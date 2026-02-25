@@ -32,7 +32,7 @@ echo ""
 echo "📦 Step 1: Installing Islands Dark theme extension..."
 
 # Install by copying to Antigravity extensions directory
-EXT_DIR="$HOME/.antigravity/extensions/bwya77.islands-dark-1.0.0"
+EXT_DIR="$HOME/.antigravity/extensions/MadhavKrishanGoswami.islands-dark-1.0.0"
 rm -rf "$EXT_DIR"
 mkdir -p "$EXT_DIR"
 cp "$SCRIPT_DIR/package.json" "$EXT_DIR/"
@@ -64,20 +64,20 @@ if (fs.existsSync(extJsonPath)) {
 
 // Remove any existing Islands Dark entry
 extensions = extensions.filter(e =>
-    e.identifier?.id !== 'bwya77.islands-dark' &&
+    e.identifier?.id !== 'MadhavKrishanGoswami.islands-dark' &&
     e.identifier?.id !== 'your-publisher-name.islands-dark'
 );
 
 // Add new entry
 extensions.push({
-    identifier: { id: 'bwya77.islands-dark' },
+    identifier: { id: 'MadhavKrishanGoswami.islands-dark' },
     version: '1.0.0',
     location: {
         '$mid': 1,
-        path: path.join(process.env.HOME, '.antigravity', 'extensions', 'bwya77.islands-dark-1.0.0'),
+        path: path.join(process.env.HOME, '.antigravity', 'extensions', 'MadhavKrishanGoswami.islands-dark-1.0.0'),
         scheme: 'file'
     },
-    relativeLocation: 'bwya77.islands-dark-1.0.0'
+    relativeLocation: 'MadhavKrishanGoswami.islands-dark-1.0.0'
 });
 
 fs.writeFileSync(extJsonPath, JSON.stringify(extensions));

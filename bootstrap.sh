@@ -3,13 +3,13 @@
 set -e
 
 # Islands Dark Theme Bootstrap Installer
-# One-liner: curl -fsSL https://raw.githubusercontent.com/bwya77/antigravity-dark-islands/main/bootstrap.sh | bash
+# One-liner: curl -fsSL https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/bootstrap.sh | bash
 
 echo "🏝️  Islands Dark Theme Bootstrap Installer"
 echo "=========================================="
 echo ""
 
-REPO_URL="https://github.com/bwya77/antigravity-dark-islands.git"
+REPO_URL="https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git"
 INSTALL_DIR="$HOME/.islands-dark-temp"
 
 # Detect OS

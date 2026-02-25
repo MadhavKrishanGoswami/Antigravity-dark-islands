@@ -1,9 +1,9 @@
 # Islands Dark
 
-<a href="https://www.buymeacoffee.com/bwya77" style="margin-right: 10px;">
+<a href="https://www.buymeacoffee.com/MadhavKrishanGoswami" style="margin-right: 10px;">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
 </a>
-<a href="https://github.com/sponsors/bwya77">
+<a href="https://github.com/sponsors/MadhavKrishanGoswami">
     <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" />
 </a>
 
@@ -44,13 +44,13 @@ The fastest way to install:
 #### macOS/Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/MadhavKrishanGoswami/antigravity-dark-islands/main/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/bootstrap.sh | bash
 ```
 
 #### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/MadhavKrishanGoswami/antigravity-dark-islands/main/bootstrap.ps1 | iex
+irm https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/bootstrap.ps1 | iex
 ```
 
 ### Manual Clone Install
@@ -60,7 +60,7 @@ If you prefer to clone first:
 #### macOS/Linux
 
 ```bash
-git clone https://github.com/MadhavKrishanGoswami/antigravity-dark-islands.git islands-dark
+git clone https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git islands-dark
 cd islands-dark
 ./install.sh
 ```
@@ -68,7 +68,7 @@ cd islands-dark
 #### Windows
 
 ```powershell
-git clone https://github.com/MadhavKrishanGoswami/antigravity-dark-islands.git islands-dark
+git clone https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git islands-dark
 cd islands-dark
 .\install.ps1
 ```
@@ -91,7 +91,7 @@ If you prefer to install manually, follow these steps:
 Clone this repo and copy the extension files:
 
 ```bash
-git clone https://github.com/MadhavKrishanGoswami/antigravity-dark-islands.git islands-dark
+git clone https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git islands-dark
 cd islands-dark
 mkdir -p ~/.antigravity/extensions/MadhavKrishanGoswami.islands-dark-1.0.0
 cp package.json ~/.antigravity/extensions/MadhavKrishanGoswami.islands-dark-1.0.0/
@@ -100,7 +100,7 @@ cp -r themes ~/.antigravity/extensions/MadhavKrishanGoswami.islands-dark-1.0.0/
 
 On Windows (PowerShell):
 ```powershell
-git clone https://github.com/MadhavKrishanGoswami/antigravity-dark-islands.git islands-dark
+git clone https://github.com/MadhavKrishanGoswami/Antigravity-dark-islands.git islands-dark
 cd islands-dark
 $ext = "$env:USERPROFILE\.antigravity\extensions\MadhavKrishanGoswami.islands-dark-1.0.0"
 New-Item -ItemType Directory -Path $ext -Force
@@ -249,7 +249,7 @@ cd islands-dark
 ./uninstall.sh
 
 # Or download and run directly:
-curl -fsSL https://raw.githubusercontent.com/MadhavKrishanGoswami/antigravity-dark-islands/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/uninstall.sh | bash
 ```
 
 **Windows (PowerShell):**
@@ -259,7 +259,7 @@ cd islands-dark
 .\uninstall.ps1
 
 # Or download and run directly:
-irm https://raw.githubusercontent.com/MadhavKrishanGoswami/antigravity-dark-islands/main/uninstall.ps1 | iex
+irm https://raw.githubusercontent.com/MadhavKrishanGoswami/Antigravity-dark-islands/main/uninstall.ps1 | iex
 ```
 
 The uninstall script will:
