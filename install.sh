@@ -12,14 +12,14 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Check if code command is available
-if ! command -v code &>/dev/null; then
-  echo -e "${RED}❌ Error: Antigravity CLI (code) not found!${NC}"
-  echo "Please install Antigravity and make sure 'code' command is in your PATH."
+# Check if agy command is available
+if ! command -v agy &>/dev/null; then
+  echo -e "${RED}❌ Error: Antigravity CLI (agy) not found!${NC}"
+  echo "Please install Antigravity and make sure 'agy' command is in your PATH."
   echo "You can do this by:"
   echo "  1. Open Antigravity"
   echo "  2. Press Cmd+Shift+P (macOS) or Ctrl+Shift+P (Linux)"
-  echo "  3. Type 'Shell Command: Install code command in PATH'"
+  echo "  3. Type 'Shell Command: Install agy command in PATH'"
   exit 1
 fi
 
@@ -87,7 +87,7 @@ fi
 
 echo ""
 echo "🔧 Step 2: Installing Custom UI Style extension..."
-if code --install-extension subframe7536.custom-ui-style --force; then
+if agy --install-extension subframe7536.custom-ui-style --force; then
   echo -e "${GREEN}✓ Custom UI Style extension installed${NC}"
 else
   echo -e "${YELLOW}⚠️  Could not install Custom UI Style extension automatically${NC}"
@@ -173,7 +173,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 echo "   Reloading Antigravity..."
-code --reload-window 2>/dev/null || code . 2>/dev/null || true
+agy --reload-window 2>/dev/null || agy . 2>/dev/null || true
 
 echo ""
 echo -e "${GREEN}Done! 🏝️${NC}"

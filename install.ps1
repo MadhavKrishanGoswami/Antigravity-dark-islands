@@ -9,13 +9,13 @@ Write-Host "================================================" -ForegroundColor C
 Write-Host ""
 
 # Check if Antigravity is installed
-$codePath = Get-Command "code" -ErrorAction SilentlyContinue
-if (-not $codePath) {
-    # Try to find code in common locations
+$agyPath = Get-Command "agy" -ErrorAction SilentlyContinue
+if (-not $agyPath) {
+    # Try to find agy in common locations
     $possiblePaths = @(
-        "$env:LOCALAPPDATA\Programs\Microsoft Antigravity\bin\code.cmd",
-        "$env:ProgramFiles\Microsoft Antigravity\bin\code.cmd",
-        "${env:ProgramFiles(x86)}\Microsoft Antigravity\bin\code.cmd"
+        "$env:LOCALAPPDATA\Programs\Microsoft Antigravity\bin\agy.cmd",
+        "$env:ProgramFiles\Microsoft Antigravity\bin\agy.cmd",
+        "${env:ProgramFiles(x86)}\Microsoft Antigravity\bin\agy.cmd"
     )
 
     $found = $false
@@ -28,12 +28,12 @@ if (-not $codePath) {
     }
 
     if (-not $found) {
-        Write-Host "Error: Antigravity CLI (code) not found!" -ForegroundColor Red
-        Write-Host "Please install Antigravity and make sure 'code' command is in your PATH."
+        Write-Host "Error: Antigravity CLI (agy) not found!" -ForegroundColor Red
+        Write-Host "Please install Antigravity and make sure 'agy' command is in your PATH."
         Write-Host "You can do this by:"
         Write-Host "  1. Open Antigravity"
         Write-Host "  2. Press Ctrl+Shift+P"
-        Write-Host "  3. Type 'Shell Command: Install code command in PATH'"
+        Write-Host "  3. Type 'Shell Command: Install agy command in PATH'"
         exit 1
     }
 }
@@ -98,7 +98,7 @@ try {
 Write-Host ""
 Write-Host "Step 2: Installing Custom UI Style extension..."
 try {
-    $output = code --install-extension subframe7536.custom-ui-style --force 2>&1
+    $output = agy --install-extension subframe7536.custom-ui-style --force 2>&1
     Write-Host "Custom UI Style extension installed" -ForegroundColor Green
 } catch {
     Write-Host "Could not install Custom UI Style extension automatically" -ForegroundColor Yellow
@@ -180,9 +180,9 @@ Write-Host ""
 # Reload Antigravity
 Write-Host "   Reloading Antigravity..." -ForegroundColor Cyan
 try {
-    code --reload-window 2>$null
+    agy --reload-window 2>$null
 } catch {
-    code $scriptDir 2>$null
+    agy $scriptDir 2>$null
 }
 
 Write-Host ""
